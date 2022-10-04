@@ -1,0 +1,244 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2rem;
+}
+
+:root {
+    --violeta: rgba(95, 82, 161, 255);
+    --rojo: rgba(231, 0, 80, 255);
+    --negro: rgba(49, 49, 49, 255);
+    --piel: rgba(245, 214, 196, 255);
+    --gris: rgba(83, 83, 83, 255);
+    --rosa: rgba(242, 156, 159, 255);
+}
+
+.foto_principal {
+    width: 12em;
+    border-radius: 50%;
+}
+
+#barra {
+    list-style-type: none;
+    padding: 2rem;
+    padding-right: 10rem;
+    text-align: right;
+    background-color: var(--violeta);
+    margin: 0;
+
+}
+
+li {
+    display: inline-block;
+    margin-inline: 1.5rem;
+}
+
+.principal {
+    background-color: var(--rosa);
+    height: 30%;
+    padding: 12%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+
+}
+
+button {
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 35%;
+}
+
+/* SECCION MIS CONOCIMIENTOS */
+
+.conocimientos h2 {
+    text-align: center;
+    padding: 4rem;
+    font-family: 'VT323', monospace;
+    font-size: 5rem;
+    font-weight: 80;
+}
+
+.conocimientos p {
+    text-align: center;
+}
+
+/* SECCION CAJITAS */
+
+.cajitas {
+    width: 60%;
+    height: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.cajitas img {
+    width: 120px;
+    height: auto;
+    margin: 2rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    /* flex:wrap; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+/* CITA */
+
+.cita {
+    background-color: papayawhip;
+    margin: 5rem;
+    padding: 2rem;
+}
+.cita h3{
+    font-size: 12rem;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+.cita p{
+    display:inline-block;
+    padding: ;
+    padding-bottom: 2rem;
+}
+
+.cita h4 {
+    text-align: center;
+    padding: 2rem;
+}
+
+/* SECCION MIS PROYECTOS */
+
+.proyectos h3 {
+    text-align: center;
+    padding: 2rem;
+}
+
+.proyectos p {
+    text-align: center;
+    font-size:1.5rem;
+}
+/* .proyectos-imagenes {
+    width: 90%;
+    text-align: center;
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* grid-template-areas:
+    "portfolio memes match3"
+    "gastos reuniones todo"
+    "peliculas"; */
+    /* gap: 1rem; */
+    /* grid-template: */
+    /* "portfolio memes match3" 150px
+    "gastos reuniones todo" 150px
+    "peliculas" 150px
+    200px auto; */
+/* }  */
+
+
+
+/* .portfolio{
+    grid-area: portfolio;
+}
+.memes {
+    grid-area: memes;
+}
+.match3 {
+    grid-area: match3;
+}
+.gastos {
+    grid-area:gastos;
+}
+.reuniones{
+    grid-area: reuniones;
+}
+.todo {
+    grid-area: todo;
+}
+.peliculas {
+    grid-area: peliculas;
+} */
+
+.proyectos-imagenes{
+    display:grid;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   height: auto;
+   width: 70%;
+   grid-gap:30px;
+   /* padding-left: 15%;
+   padding-right: 15%; */
+   margin-left: 15%;
+   margin-right: 15%;
+   margin-top: 5%;
+   margin-bottom: 5%;
+}
+
+.proyectos-imagenes div {
+    width: 330px;
+    height: auto;
+    border: 0.5px hsla(341, 18%, 15%, 0.1); 
+    /* background-color: bisque; */
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    outline: 1px solid;
+    /* grid-template-areas:
+    "portfolio memes match3" 
+    "gastos reuniones todo" 
+    "peliculas"; */
+}
+
+.proyectos-imagenes div span{
+    padding: 1.5rem;
+}
+.proyectos-imagenes div:hover {
+    color:blueviolet;
+    border: 3px rgba(158, 17, 245, 0.54);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.proyectos-imagenes img {
+    width: 330px;
+    height: 250px;
+}
+.texto-imagen-proyectos {
+    font-size:1.5rem;
+}
+
+/* SECCIONES CONTACTAME */
+
+.contactame {
+    background-color: coral;
+}
+
+.escribime {
+    background-color: rgb(209, 184, 233);
+}
+
+footer {
+    background-color: purple;
+}
+
