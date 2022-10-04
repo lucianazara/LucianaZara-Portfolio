@@ -82,7 +82,7 @@ button {
     margin-left: 20%;
     margin-right: 20%;
 }
-.cajitas img {
+.cajitas div {
     width: 120px;
     height: auto;
     margin: 2rem;
@@ -94,6 +94,10 @@ button {
     justify-content: space-evenly;
     text-align: center;
 
+}
+
+.cajitas div img {
+    padding: 1rem;
 }
 
 /* CITA */
