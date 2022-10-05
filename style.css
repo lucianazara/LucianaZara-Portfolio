@@ -30,7 +30,14 @@ body {
     text-align: right;
     background-color: var(--violeta);
     margin: 0;
+ 
+}
 
+nav a:link{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size:1.5rem;
 }
 
 li {
@@ -38,23 +45,45 @@ li {
     margin-inline: 1.5rem;
 }
 
+nav a:hover{
+    color: rgba(255, 255, 255, 0.61);
+}
+
+
+.contacto-nav{
+        background-color: grey;
+        color: white;
+        padding: 10px 50px;
+        border-radius: 100px;
+    }
+
 .principal {
-    background-color: var(--rosa);
+    background-color: var(--negro);
     height: 30%;
     padding: 12%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-around;
+    color: rgba(255, 255, 255, 0.872);
 
 }
 
 button {
     font-size: 2rem;
     padding: 20px;
-    border-radius: 35%;
+    top: 50%;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--rosa);
+
 }
 
+button:hover{
+    transform: scale(1.1);
+    color: purple;
+    background-color: var(--rojo);
+}
 /* SECCION MIS CONOCIMIENTOS */
 
 .conocimientos h2 {
@@ -83,9 +112,9 @@ button {
     margin-right: 20%;
 }
 .cajitas div {
-    width: 120px;
+    width: 8rem;
     height: auto;
-    margin: 2rem;
+    margin: 3rem;
     display: flex;
     text-align: center;
     align-items: center;
@@ -93,12 +122,26 @@ button {
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
+    background-color: white;
+    border: 0.3px solid grey;
+    border-radius: 15px;
+    padding: .5rem;
+    font-size: 2rem;
 
 }
 
 .cajitas div img {
-    padding: 1rem;
+ padding: 1rem;
 }
+
+.cajitas div:hover {
+    color:blueviolet;
+    border: 3px rgba(158, 17, 245, 0.54);
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
 
 /* CITA */
 
@@ -234,15 +277,65 @@ button {
 
 /* SECCIONES CONTACTAME */
 
+.contacto-escribime {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 5rem;
+    border-radius: 50%;
+    width: auto;
+    height: auto;
+}
+
 .contactame {
     background-color: coral;
+    height: 80vh;
+    width: 150vw;
+    padding: 3rem;
 }
 
 .escribime {
     background-color: rgb(209, 184, 233);
+    height: 80vh;
+    width: 150vw;
+    padding: 3rem;
+
 }
 
+.fa-brands, 
+.fa-regular{
+    font-size: 30px;
+    color: white;
+    padding: 1.4rem;
+}
+
+input, textarea {
+    border-radius: 20px;
+    padding: 10px 15px;
+    display: block;
+    
+}
+
+form {
+    font-size: 1.5rem;
+}
+/* SECCION FOOTER */
+
+.indices-footer {
+    display: flex;
+    justify-content: center;
+}
+.iconos-footer {
+    display: flex;
+    justify-content: center;
+}
 footer {
     background-color: purple;
+    padding: 4rem;
 }
 
+footer p {
+    display: flex;
+    justify-content: center;
+}
