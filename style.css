@@ -5,8 +5,14 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=VT323&display=swap');
+
+
 body {
     font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+     /* font-family: 'VT323', monospace; */
+
 }
 
 :root {
@@ -18,11 +24,31 @@ body {
     --rosa: rgba(242, 156, 159, 255);
 }
 
+h1 {
+font-family: 'VT323', monospace;
+font-size: 5rem;
+letter-spacing: 1rem;
+text-shadow: 2px 2px 4px #000000;
+}
+
+#luciana:hover{
+    color: var(--rojo);
+    text-shadow: 2px 2px 4px --negro;
+
+}
+
+#zaracho:hover{
+    color: var(--violeta);
+    text-shadow: 2px 2px 4px --negro;
+
+}
 .foto_principal {
     width: 12em;
     border-radius: 50%;
 }
-
+.foto_principal:hover {
+    transform: scale(1.05);
+}
 #barra {
     list-style-type: none;
     padding: 2rem;
@@ -47,6 +73,7 @@ li {
 
 nav a:hover{
     color: rgba(255, 255, 255, 0.61);
+    cursor: pointer;
 }
 
 
@@ -83,6 +110,7 @@ button:hover{
     transform: scale(1.1);
     color: purple;
     background-color: var(--rojo);
+    cursor: pointer;
 }
 /* SECCION MIS CONOCIMIENTOS */
 
@@ -295,6 +323,11 @@ button:hover{
     padding: 3rem;
 }
 
+.contactame-texto {
+    font-size: 1.2rem;
+
+}
+
 .escribime {
     background-color: rgb(209, 184, 233);
     height: 80vh;
@@ -307,7 +340,12 @@ button:hover{
 .fa-regular{
     font-size: 30px;
     color: white;
-    padding: 1.4rem;
+    margin: 1rem;
+}
+
+.fa-brands:hover,
+.fa-regular:hover {
+    color: var(--violeta);
 }
 
 input, textarea {
