@@ -67,7 +67,6 @@ header {
     size: 30px;
     height: 13vh;
     transition: 0.3s;
-
 } 
 
 
@@ -77,10 +76,14 @@ header {
 
 nav a:link{
     text-decoration: none;
-    color: white;
+    color: --blanco;
     text-transform: uppercase;
     font-size:1.5rem;
     font-weight: 600;
+}
+
+nav a:visited{
+    color: var(--blanco);
 }
 
 li {
@@ -129,14 +132,21 @@ button {
     border-radius: 50px;
     background-color: var(--rosa);
     font-weight: 650;
-
 }
 
 button:hover{
-    transform: scale(1.04);
     color: var(--blanco);
     background-color: var(--rojo);
     cursor: pointer;
+}
+
+button a:link{
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+button a:visited{
+    color: var(--blanco);
 }
 /* SECCION MIS CONOCIMIENTOS */
 
