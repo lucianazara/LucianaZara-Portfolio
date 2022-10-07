@@ -22,6 +22,7 @@ body {
     --piel: rgba(245, 214, 196, 255);
     --gris: rgba(83, 83, 83, 255);
     --rosa: rgba(242, 156, 159, 255);
+    --blanco: rgba(255, 255, 255, 0.822);
 }
 
 h1 {
@@ -37,10 +38,10 @@ text-shadow: 2px 2px 4px #000000;
 
 }
 
+
 #zaracho:hover{
     color: var(--violeta);
     text-shadow: 2px 2px 4px --negro;
-
 }
 .foto_principal {
     width: 12em;
@@ -49,14 +50,29 @@ text-shadow: 2px 2px 4px #000000;
 .foto_principal:hover {
     transform: scale(1.05);
 }
-#barra {
-    list-style-type: none;
-    padding: 2rem;
-    padding-right: 10rem;
+header {
+    padding: 1rem;
+    padding-right: 6rem;
     text-align: right;
-    background-color: var(--violeta);
+    background-color: black;
     margin: 0;
- 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+#nav-image{
+    margin-right: auto;
+    size: 30px;
+    height: 13vh;
+    transition: 0.3s;
+
+} 
+
+
+#nav-image:hover {
+        transform: translate(10px, 0);
 }
 
 nav a:link{
@@ -64,11 +80,14 @@ nav a:link{
     color: white;
     text-transform: uppercase;
     font-size:1.5rem;
+    font-weight: 600;
 }
 
 li {
     display: inline-block;
     margin-inline: 1.5rem;
+    list-style-type: none;
+
 }
 
 nav a:hover{
@@ -83,6 +102,12 @@ nav a:hover{
         padding: 10px 50px;
         border-radius: 100px;
     }
+
+.contacto-nav:hover{
+    background-color: var(--rosa);
+    color: var(--negro);
+}
+
 
 .principal {
     background-color: var(--negro);
@@ -103,17 +128,21 @@ button {
     border: none;
     border-radius: 50px;
     background-color: var(--rosa);
+    font-weight: 650;
 
 }
 
 button:hover{
-    transform: scale(1.1);
-    color: purple;
+    transform: scale(1.04);
+    color: var(--blanco);
     background-color: var(--rojo);
     cursor: pointer;
 }
 /* SECCION MIS CONOCIMIENTOS */
 
+/* .conocimientos {
+    background-image: url(img/img-fondo.jpg);
+} */
 .conocimientos h2 {
     text-align: center;
     padding: 4rem;
@@ -174,9 +203,10 @@ button:hover{
 /* CITA */
 
 .cita {
-    background-color: papayawhip;
+    background-color:  var(--rosa);
     margin: 5rem;
-    padding: 2rem;
+    padding: 1rem;
+    width: 100rem;
 }
 .cita h3{
     font-size: 12rem;
@@ -198,6 +228,13 @@ button:hover{
 
 /* SECCION MIS PROYECTOS */
 
+.proyectos {
+    background-color: var(--gris);
+    height: 100%;
+    padding: 2rem;
+    color: var(--blanco);
+}
+
 .proyectos h3 {
     text-align: center;
     padding: 2rem;
@@ -206,6 +243,11 @@ button:hover{
 .proyectos p {
     text-align: center;
     font-size:1.5rem;
+   
+}
+
+.proyectos span {
+    font-weight: 600;
 }
 /* .proyectos-imagenes {
     width: 90%;
@@ -257,14 +299,11 @@ button:hover{
    grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: 1fr 1fr 1fr;
    height: auto;
-   width: 70%;
-   grid-gap:30px;
+   width: 75%;
+   grid-gap: 20px;
    /* padding-left: 15%;
    padding-right: 15%; */
-   margin-left: 15%;
-   margin-right: 15%;
-   margin-top: 5%;
-   margin-bottom: 5%;
+   margin: 5% 15% 5% 15%;
 }
 
 .proyectos-imagenes div {
@@ -279,6 +318,7 @@ button:hover{
     justify-content: space-evenly;
     border-radius: 15px;
     outline: 1px solid;
+   
     /* grid-template-areas:
     "portfolio memes match3" 
     "gastos reuniones todo" 
@@ -286,13 +326,15 @@ button:hover{
 }
 
 .proyectos-imagenes div span{
-    padding: 1.5rem;
+    padding: 1rem;
 }
 .proyectos-imagenes div:hover {
     color:blueviolet;
     border: 3px rgba(158, 17, 245, 0.54);
     transform: scale(1.1);
     cursor: pointer;
+    background-color: var(--blanco);
+
 }
 
 .proyectos-imagenes img {
