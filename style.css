@@ -11,8 +11,6 @@
 body {
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
-     /* font-family: 'VT323', monospace; */
-
 }
 
 :root {
@@ -35,9 +33,7 @@ text-shadow: 2px 2px 4px #000000;
 #luciana:hover{
     color: var(--rojo);
     text-shadow: 2px 2px 4px --negro;
-
 }
-
 
 #zaracho:hover{
     color: var(--violeta);
@@ -48,11 +44,11 @@ text-shadow: 2px 2px 4px #000000;
     font-size: 2rem;
     padding: 1rem;
 }
-.foto_principal {
+.foto-principal {
     width: 12em;
     border-radius: 50%;
 }
-.foto_principal:hover {
+.foto-principal:hover {
     transform: scale(1.05);
 }
 header {
@@ -117,7 +113,6 @@ nav a:hover{
     transition: 0.3s;
 
 }
-
 
 .principal {
     background-color: var(--negro);
@@ -197,7 +192,6 @@ button a:visited{
     display: flex;
     text-align: center;
     align-items: center;
-    /* flex:wrap; */
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
@@ -282,60 +276,16 @@ button a:visited{
 .proyectos span {
     font-weight: 600;
 }
-/* .proyectos-imagenes {
-    width: 90%;
-    text-align: center;
-    font-size: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    /* grid-template-areas:
-    "portfolio memes match3"
-    "gastos reuniones todo"
-    "peliculas"; */
-    /* gap: 1rem; */
-    /* grid-template: */
-    /* "portfolio memes match3" 150px
-    "gastos reuniones todo" 150px
-    "peliculas" 150px
-    200px auto; */
-/* }  */
 
-
-
-/* .portfolio{
-    grid-area: portfolio;
-}
-.memes {
-    grid-area: memes;
-}
-.match3 {
-    grid-area: match3;
-}
-.gastos {
-    grid-area:gastos;
-}
-.reuniones{
-    grid-area: reuniones;
-}
-.todo {
-    grid-area: todo;
-}
-.peliculas {
-    grid-area: peliculas;
-} */
 
 .proyectos-imagenes{
     display:grid;
     justify-content: center;
-    /* flex-wrap: wrap; */
    grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: 1fr 1fr 1fr;
    height: auto;
    width: 75%;
    grid-gap: 20px;
-   /* padding-left: 15%;
-   padding-right: 15%; */
    margin: 5% 15% 5% 15%;
 }
 
@@ -343,7 +293,6 @@ button a:visited{
     width: 330px;
     height: auto;
     border: 0.5px hsla(341, 18%, 15%, 0.1); 
-    /* background-color: bisque; */
     text-align: center;
     align-items: center;
     display: flex;
@@ -351,11 +300,6 @@ button a:visited{
     justify-content: space-evenly;
     border-radius: 15px;
     outline: 1px solid;
-   
-    /* grid-template-areas:
-    "portfolio memes match3" 
-    "gastos reuniones todo" 
-    "peliculas"; */
 }
 
 .proyectos-imagenes div span{
@@ -384,7 +328,6 @@ button a:visited{
     background-color: var(--violeta);
     display: flex;
     flex-direction: row;
-    /* padding-bottom: 5rem; */
     width: auto;
     min-height: 100vh;
     justify-content: space-around;
@@ -397,8 +340,6 @@ button a:visited{
 }
 
 .contactame {
-    /* padding: 1rem; */
-    /* width: 150vw; */
     min-width: 50%;
 }
 
@@ -489,4 +430,110 @@ footer {
 footer p {
     display: flex;
     justify-content: center;
+}
+
+/* MEDIA QUERIES */
+
+/* TABLET */
+
+@media (max-width: 880px) {
+
+header {
+    height: auto;
+    
+}
+
+li {
+    display: flex;
+    padding: 1rem 2rem 1rem;
+}
+
+.foto-principal {
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.proyecto-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+.contacto-escribime {
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    height: 230vh;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0;
+}
+.contactame-texto-icono {
+    min-width: 600px;
+}
+
+.escribime form{
+    font-size: 12px;
+    margin: 10px;
+}
+
+.footer-nav ul {
+    text-align: center;
+    gap: 10px;
+}
+
+.indices-footer {
+    font-size: 20px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+}
+
+/* CELULAR */
+
+@media (max-width: 480px) {
+.conocimientos {
+    background-image: none;
+    background-color: black;
+}
+
+.cajitas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cita p {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.contacto-escribime {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 1rem;
+  max-width: 480px;
+  min-height: 500px;
+}
+.contactame-texto {
+    display: none;
+}
+
+.escribime form textarea {
+ font-size: 10px;
+}
+
+.iconos-footer li {
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  max-width: 400px;
+  gap: 10px;
+}
+
 }
