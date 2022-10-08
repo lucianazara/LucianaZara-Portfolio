@@ -32,7 +32,7 @@
             <div>
                 <h2>¡Hola! Soy</h2>
                 <h1> <span id="luciana">Luciana </span><span id="zaracho">Zaracho</span></h1>
-                <p> Programadora, fan del mate y los memes</p><br>
+                <p class="principal-descripcion"> Programadora, fan del mate y los memes</p><br>
                 <button><a href="#proyectos">Lo que hago </a></button>
             </div>
             <div>
@@ -42,8 +42,7 @@
     <!-- SECCION CONOCIMIENTOS -->
         <div id="conocimientos" class="conocimientos">
             <h2 class="mis_conocimientos">Mis conocimientos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum autem doloribus illo quidem repellat.
-                Possimus debitis</p>
+            <p> Tecnologías que conozco y estudio: </p>
             </p>
             <div class="cajitas">
                 <div> <img src="img/html5-original.svg" alt="logo de HTML"><span>HTML </span> </div>
@@ -53,11 +52,11 @@
                 <div> <img src="img/github-original-wordmark.svg" alt="logo de HTML"><span>Github</span></div>
                 <div><img src="img/react-original-wordmark.svg" alt="logo de React"><span>React</span></div>
             </div>
+            <!-- SECCION CITA -->
             <div class="cita">
-                <h3>"</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, reiciendis beatae? Doloribus beatae
-                    cupiditate facere? Asperiores dolorem iste nobis veritatis.</p>
-                <h4>Someone</h4>
+                <i class="fa-solid fa-quote-right"></i>
+                <p> Do or do not. There is no try.</p>
+                <h4>Yoda</h4>
             </div>
             <div id="proyectos" class="proyectos">
                 <h3>Mis proyectos</h3>
@@ -73,24 +72,23 @@
             </div>
             </div>
             </div>
+            <!-- SECCION CONTACTAME/ESCRIBIME-->
             <div class="contacto-escribime">
             <div class="contactame">
-                <h3>Contactame</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quis fugit eaque veniam magnam id, esse
-                    quod
-                    autem ipsam accusamus illo! Necessitatibus officiis natus et tempora delectus soluta accusamus! Id?
+                <h3 class="contactame-titulo">Contactame</h3>
+                <p class="contactame-texto"> Podés contactarme o encontrarme en los siguientes sitios. 
                 </p>
                 <ul>
-                    <li><i class="fa-brands fa-twitter"></i><span class="contactame-texto"> @LuZara </span></li><br>
-                    <li><i class="fa-brands fa-github"></i> <span class="contactame-texto">/lucianazara</span></li><br>
-                    <li><i class="fa-brands fa-linkedin"></i> <span class="contactame-texto">/in/luciana-zaracho</span></li><br>
-                    <li><i class="fa-regular fa-envelope"></i> <span class="contactame-texto">lu@gmail.com</span><br>
+                    <li><span class="contactame-texto-icono"><i class="fa-brands fa-twitter"> @LuZara </span></i></li><br>
+                    <li><span class="contactame-texto-icono"><i class="fa-brands fa-github"> /lucianazara</span></i> </li><br>
+                    <li><span class="contactame-texto-icono"><i class="fa-brands fa-linkedin"> /in/luciana-zaracho</span></i></li><br>
+                    <li><span class="contactame-texto-icono"><i class="fa-regular fa-envelope"> lu@gmail.com </span></i><br>
                 </ul>
             </div>
             <div class="escribime">
                 <h3>Escribime</h3>
                 <form>
-                    <label for="nombre">Nombre*</label><br>
+                    <label for="nombre">Nombre*</label>
                     <input type="text" id="nombre" name="nombre" value="p ej.Ada"><br>
                     <label for="apellido">Apellido*</label><br>
                     <input type="text" name="apellido" value="p. ej:Lovelace">
@@ -98,9 +96,9 @@
                     <input type="mail" value="p. ej:ada.lovelace@gmail.com">
                     <label for="mensaje">Mensaje*</label>
                     <textarea name="mensaje" rows="15" cols="60">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                         Recusandae facilis ducimus ipsum atque quod, quis modi dolorem sunt? Saepe, aperiam.
+                        Aquí puede escribir un mensaje.
                     </textarea>
+                    <button type="submit" class="escribime-boton-enviar"> Enviar </button>
                 </form>
             </div>
         </div>
@@ -124,7 +122,7 @@
             <li><i class="fa-regular fa-envelope"></i></li>
         </ul>
     </div>
-        <p>Hecho con amor por Ada</p>
+        <p>Hecho con ❤️ por mí</p>
     </footer>
 </body>
 

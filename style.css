@@ -43,6 +43,11 @@ text-shadow: 2px 2px 4px #000000;
     color: var(--violeta);
     text-shadow: 2px 2px 4px --negro;
 }
+.principal-descripcion {
+    max-width: 800px;
+    font-size: 2rem;
+    padding: 1rem;
+}
 .foto_principal {
     width: 12em;
     border-radius: 50%;
@@ -109,6 +114,8 @@ nav a:hover{
 .contacto-nav:hover{
     background-color: var(--rosa);
     color: var(--negro);
+    transition: 0.3s;
+
 }
 
 
@@ -138,6 +145,8 @@ button:hover{
     color: var(--blanco);
     background-color: var(--rojo);
     cursor: pointer;
+    transition: 0.3s;
+
 }
 
 button a:link{
@@ -150,12 +159,15 @@ button a:visited{
 }
 /* SECCION MIS CONOCIMIENTOS */
 
-/* .conocimientos {
-    background-image: url(img/img-fondo.jpg);
-} */
+ .conocimientos {
+    background-image: url(img/invaders-wallpaper.png);
+    background-repeat: no repeat;
+    background-color: var(--negro);
+    color: var(--blanco)
+}  
 .conocimientos h2 {
     text-align: center;
-    padding: 4rem;
+    padding: 3rem;
     font-family: 'VT323', monospace;
     font-size: 5rem;
     font-weight: 80;
@@ -194,6 +206,7 @@ button a:visited{
     border-radius: 15px;
     padding: .5rem;
     font-size: 2rem;
+    color: var(--negro);
 
 }
 
@@ -202,33 +215,43 @@ button a:visited{
 }
 
 .cajitas div:hover {
-    color:blueviolet;
+    color: var(--blanco);
     border: 3px rgba(158, 17, 245, 0.54);
     transform: scale(1.1);
     cursor: pointer;
-
+    background-color: var(--rosa);
+    transition: 0.3s;
 }
 
 
 /* CITA */
 
 .cita {
-    background-color:  var(--rosa);
-    margin: 5rem;
+    background-color: var(--rosa);
     padding: 1rem;
-    width: 100rem;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 60vh;
+    flex-direction: column;
+
 }
-.cita h3{
-    font-size: 12rem;
+.fa-quote-right {
+    font-size: 5rem;
+    padding: 2rem;
     font-weight: bolder;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .cita p{
-    display:inline-block;
-    padding: ;
-    padding-bottom: 2rem;
+    display: flex;
+    padding: 2rem;
 }
 
 .cita h4 {
@@ -355,49 +378,64 @@ button a:visited{
     font-size:1.5rem;
 }
 
-/* SECCIONES CONTACTAME */
+/* SECCIONES CONTACTAME/ESCRIBIME */
 
 .contacto-escribime {
+    background-color: var(--violeta);
     display: flex;
     flex-direction: row;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 5rem;
-    border-radius: 50%;
+    /* padding-bottom: 5rem; */
     width: auto;
-    height: auto;
+    min-height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    margin: 70px 200px 70px 200px;
+    padding: 30px 80px 30px 80px;
+
+   
 }
 
 .contactame {
-    background-color: coral;
-    height: 80vh;
-    width: 150vw;
-    padding: 3rem;
+    /* padding: 1rem; */
+    /* width: 150vw; */
+    min-width: 50%;
 }
 
+.contactame-titulo {
+    padding-bottom: 2rem;
+}
 .contactame-texto {
-    font-size: 1.2rem;
-
 }
 
+.contactame-texto-icono {
+    font-size: 1.4rem;
+}
+
+.contactame-texto-icono:hover{
+    color: var(--rosa);
+}
 .escribime {
-    background-color: rgb(209, 184, 233);
     height: 80vh;
     width: 150vw;
     padding: 3rem;
 
+}
+
+.contactame-texto-icono {
+    text-transform: lowercase;
 }
 
 .fa-brands, 
 .fa-regular{
-    font-size: 30px;
-    color: white;
+    font-size: 1.2rem;
+    color: var(--blanco);
     margin: 1rem;
 }
 
 .fa-brands:hover,
 .fa-regular:hover {
-    color: var(--violeta);
+    color: var(--rosa);
 }
 
 input, textarea {
@@ -407,8 +445,31 @@ input, textarea {
     
 }
 
+form label {
+    padding: 1rem;
+}
+
 form {
     font-size: 1.5rem;
+}
+
+.escribime-boton-enviar {
+    margin-top: 15px;
+    padding: 8px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 48px;
+    background-color: --rosa;
+    color: --blanco;
+    margin-bottom: 2rem;
+}
+
+.contact-send-btn:hover {
+    background-color: var(--rojo);
+    color: var(--blanco);
+
+    cursor: pointer;
 }
 /* SECCION FOOTER */
 
@@ -421,7 +482,7 @@ form {
     justify-content: center;
 }
 footer {
-    background-color: purple;
+    background-color: var(--rojo);
     padding: 4rem;
 }
 
